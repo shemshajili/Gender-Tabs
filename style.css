@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  
+  body {
+    background-color:rgb(109, 223, 109) ;
+  }
+  
+  .container {
+    width: 500px;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 100px;
+   
+  }
+  
+  .container .title {
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+  }
+  
+  .container .gender__container {
+    padding: 30px;
+  }
+  
+  .container .gender__container ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .gender__container ul li {
+    width: 130px;
+    text-align: center;
+    background: #f2f3f4;
+    border-right: 1px solid #f2f3f4;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+
+  .container .gender__container ul li:hover,
+  .container .gender__container ul li.active {
+    background: rgb(109, 223, 109);
+    color: white;
+  }
+  .gender__container {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .gender__container:hover {
+    background: white;
+    cursor: pointer;
+  }
+  
+  .people__container .person_tabs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .person__container .person_tabs .left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .person__container .left img {
+    width: 70px;
+    height: 70px;
+    display: block;
+  }
+  
+  .person__container .left .person_data {
+    margin-left: 20px;
+  }
+  
+  .name {
+    font-weight: 800;
+    margin-left: 3px;
+  }
+  
+  .distance {
+    color: rgb(122, 122, 122);
+    margin-left: 3px;
+    font-size: 14px;
+    margin-top: 5px;
+
+  }
+  
+  .status  {
+    position: relative;
+    color: rgb(132, 131, 131);
+    margin-right: 10px;
+  }
+  .status:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -15px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgb(132, 131, 131);
+  }
+  .person__container.status  .right .status :before {
+    background: #7fc469;
+  }
+  .gender__container ul li.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
